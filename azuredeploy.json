@@ -4,7 +4,7 @@
     "parameters": {
         "resourcePrefix": {
             "type": "string",
-            "defaultValue": "jfk",
+            "defaultValue": "fencing",
             "metadata": {
                 "description": "Prefix for all resources created by this template"
             }
@@ -32,7 +32,7 @@
         },
         "searchServiceSku": {
             "type": "string",
-            "defaultValue": "basic",
+            "defaultValue": "free",
             "allowedValues": [
                 "free",
                 "basic",
@@ -89,7 +89,7 @@
         },
         "repoURL": {
             "type": "string",
-            "defaultValue": "https://github.com/Microsoft/AzureSearch_JFK_Files",
+            "defaultValue": "https://github.com/jhandel/AzureSearch_Fencing_Files",
             "metadata": {
                 "description": "The URL for the GitHub repository that contains the project to deploy."
             }
@@ -104,7 +104,7 @@
     },
     "variables": {
         "websiteName": "[concat(parameters('resourcePrefix'), '-site-', uniqueString(resourceGroup().id, deployment().name))]",
-        "storageAccountName": "[concat(parameters('resourcePrefix'), 'storage', uniqueString(resourceGroup().id, deployment().name))]",
+        "storageAccountName": "[concat(parameters('resourcePrefix'), '', uniqueString(resourceGroup().id, deployment().name))]",
         "searchServiceName": "[concat(parameters('resourcePrefix'), '-search-service-', uniqueString(resourceGroup().id, deployment().name))]",
         "hostingPlanName": "[concat(parameters('resourcePrefix'), '-plan-', uniqueString(resourceGroup().id, deployment().name))]",
         "functionAppName": "[concat(parameters('resourcePrefix'), '-function-app-', uniqueString(resourceGroup().id, deployment().name))]",

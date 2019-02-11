@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace Microsoft.CognitiveSearch.WebApiSkills
 {
-    public static class JfkWebApiSkills
+    public static class FencingWebApiSkills
     {
         [FunctionName("facet-graph-nodes")]
         public static IActionResult GetFacetGraphNodes([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)]HttpRequest req, TraceWriter log, ExecutionContext executionContext)

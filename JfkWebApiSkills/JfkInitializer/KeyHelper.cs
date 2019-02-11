@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace JfkInitializer
+namespace FencingInitializer
 {
     class KeyHelper
     {

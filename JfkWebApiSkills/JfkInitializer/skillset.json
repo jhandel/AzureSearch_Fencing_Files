@@ -1,5 +1,5 @@
 ﻿{
-    "description": "JFK Files Skillset",
+    "description": "Fencing Files Skillset",
     "skills": [
         {
             "@odata.type": "#Microsoft.Skills.Vision.OcrSkill",
@@ -337,7 +337,7 @@
     ],
     "cognitiveServices": {
         "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
-        "description": "CognitiveServices account for JFK demo",
+        "description": "CognitiveServices account for Fencing demo",
         "key": "[CognitiveServicesKey]"
     }
 }

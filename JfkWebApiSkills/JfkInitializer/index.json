@@ -102,7 +102,7 @@
     },
     "suggesters": [
         {
-            "name": "sg-jfk",
+            "name": "sg-fencing",
             "searchMode": "analyzingInfixMatching",
             "sourceFields": [ "entities" ]
         }

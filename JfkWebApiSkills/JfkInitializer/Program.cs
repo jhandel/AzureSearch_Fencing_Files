@@ -14,7 +14,7 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Newtonsoft.Json.Linq;
 
-namespace JfkInitializer
+namespace FencingInitializer
 {
     class Program
     {
@@ -160,8 +160,8 @@ namespace JfkInitializer
             {
                 DataSource dataSource = DataSource.AzureBlobStorage(
                     name: DataSourceName,
-                    storageConnectionString: ConfigurationManager.AppSettings["JFKFilesBlobStorageAccountConnectionString"],
-                    containerName: ConfigurationManager.AppSettings["JFKFilesBlobContainerName"],
+                    storageConnectionString: ConfigurationManager.AppSettings["FencingFilesBlobStorageAccountConnectionString"],
+                    containerName: ConfigurationManager.AppSettings["FencingFilesBlobContainerName"],
                     description: "Data source for cognitive search example"
                 );
                 await _searchClient.DataSources.CreateAsync(dataSource);
